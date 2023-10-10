@@ -1,0 +1,289 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+}
+
+:root {
+  --color-primaty-light: #ffffff;
+  --color-primary-middle: #2b7fff;
+  --color-primary-dark: #011c44;
+  --secondary-color-dark: #4a4a4a;
+  --secondary-color-middle: #747272;
+  --secondary-color-accent-dark: #011f4a;
+  --secondary-color-accent-light: #ffd02b;
+}
+
+/* base */
+body {
+  color: var(--color-primary-dark);
+  background-color: var(--color-primaty-light);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+.input {
+  font-size: 13px;
+  width: 310px;
+  height: 52px;
+  background-color: transparent;
+  border: 2px solid var(--secondary-color-middle);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.input:hover {
+  background-color: var(--secondary-color-middle);
+}
+
+.input::placeholder {
+  color: var(--color-primaty-light);
+}
+
+/* header */
+.logo {
+  text-decoration: none;
+}
+.logo-text {
+  color: var(--color-primary-middle);
+  font-family: 'Play', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: capitalize;
+}
+.link {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-primary-middle);
+}
+
+.section-title {
+  color: var(--color-primary-dark);
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.title-accent {
+  color: var(--color-primary-middle);
+}
+
+/* hero section */
+
+.main-direction-title {
+  text-align: left;
+}
+
+.hero-tittle {
+  color: var(--color-primary-middle);
+  font-family: 'Play', sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+  text-transform: capitalize;
+}
+
+.button {
+  color: var(--color-primaty-light);
+  background-color: var(--color-primary-middle);
+  border: 2px solid var(--color-primary-middle);
+  border-radius: 32px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.button:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+  border-color: var(--color-primary-middle);
+}
+
+.button-text {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.button-call {
+  width: 219px;
+  height: 53px;
+}
+
+/* main-direction-section */
+
+.main-direction-title-accent {
+  text-transform: capitalize;
+}
+
+.main-direction-text {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.main-direction-text-accent {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* advantages-section */
+.advantages-item {
+  line-height: 1.3;
+  width: 316px;
+  height: 181px;
+  border: 2px solid var(--secondary-color-middle);
+  border-radius: 32px;
+  background-color: var(--color-primaty-light);
+  text-align: center;
+}
+
+/* services-section */
+.services-item {
+  width: 344px;
+  height: 456px;
+  font-size: 22px;
+  border-radius: 120px 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    #011c44 101.39%
+  );
+  /* color: var(--color-primaty-light); */
+}
+
+/* contact-section */
+
+.contact-map {
+  width: 605px;
+  height: 481px;
+  border: none;
+  border-radius: 32px;
+}
+
+.contact-window {
+  background-color: var(--color-primary-dark);
+  width: 423px;
+  height: 481px;
+  border: 2px solid var(--color-primary-dark);
+  border-radius: 32px;
+  text-align: center;
+}
+
+.contact-window-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-primaty-light);
+}
+
+.contact-window-text-accent {
+  color: var(--color-primary-middle);
+}
+
+.button-appointment:hover {
+  background-color: var(--color-primaty-light);
+  border-color: var(--color-primary-dark);
+}
+
+.contact-window-text-privacy {
+  color: var(--secondary-color-middle);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.contacts-privacy {
+  color: var(--secondary-color-middle);
+}
+
+.button-appointment {
+  width: 281px;
+  height: 53px;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--color-primary-dark);
+}
+
+.footer-link {
+  color: var(--color-primaty-light);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-primary-middle);
+}
+
+.address-copyright {
+  color: var(--secondary-color-middle);
+  font-size: 13px;
+}
+
+.footer-link,
+.address-link {
+  font-size: 16px;
+}
